@@ -87,6 +87,10 @@ ansi-escapes@^1.1.0:
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/ansi-escapes/-/ansi-escapes-1.4.0.tgz#d3a8a83b319aa67793662b13e761c7911422306e"
 
+ansi-html@0.0.5:
+  version "0.0.5"
+  resolved "https://registry.yarnpkg.com/ansi-html/-/ansi-html-0.0.5.tgz#0dcaa5a081206866bc240a3b773a184ea3b88b64"
+
 ansi-html@0.0.6:
   version "0.0.6"
   resolved "https://registry.yarnpkg.com/ansi-html/-/ansi-html-0.0.6.tgz#bda8e33dd2ee1c20f54c08eb405713cbfc0ed80e"
@@ -2712,19 +2716,19 @@ handlebars@^4.0.1:
   optionalDependencies:
     uglify-js "^2.6"
 
-hapi-webpack-dev-middleware@1.0.1, hapi-webpack-dev-middleware@^1.0.0:
+hapi-webpack-dev-middleware@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/hapi-webpack-dev-middleware/-/hapi-webpack-dev-middleware-1.0.1.tgz#9888b3152a2ad26c3a38c3d83d426414c18868fc"
   dependencies:
     webpack "1.13.0"
     webpack-dev-middleware "1.6.1"
 
-hapi-webpack-hot-middleware@1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/hapi-webpack-hot-middleware/-/hapi-webpack-hot-middleware-1.0.1.tgz#1fdbd120524b922cd92b9840566d39c4d4b2e5dc"
+hapi-webpack-hot-middleware@^1.0.1:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/hapi-webpack-hot-middleware/-/hapi-webpack-hot-middleware-1.0.2.tgz#41b473a43e5530dc9b8b2c8fef7bd813e46a3d19"
   dependencies:
-    hapi-webpack-dev-middleware "^1.0.0"
-    webpack-hot-middleware "^2.6.0"
+    hapi-webpack-dev-middleware "1.0.1"
+    webpack-hot-middleware "2.10.0"
 
 hapi@^16.1.0:
   version "16.1.0"
@@ -6055,7 +6059,16 @@ webpack-dev-middleware@^1.0.11, webpack-dev-middleware@^1.6.1:
     path-is-absolute "^1.0.0"
     range-parser "^1.0.3"
 
-webpack-hot-middleware@^2.12.2, webpack-hot-middleware@^2.6.0:
+webpack-hot-middleware@2.10.0:
+  version "2.10.0"
+  resolved "https://registry.yarnpkg.com/webpack-hot-middleware/-/webpack-hot-middleware-2.10.0.tgz#aa4d6cedb9979d3f7b5e33999be380f12120fc74"
+  dependencies:
+    ansi-html "0.0.5"
+    html-entities "^1.2.0"
+    querystring "^0.2.0"
+    strip-ansi "^3.0.0"
+
+webpack-hot-middleware@^2.12.2:
   version "2.13.2"
   resolved "https://registry.yarnpkg.com/webpack-hot-middleware/-/webpack-hot-middleware-2.13.2.tgz#6500b15e6d4f1a9590f8df708183f4d2ac2c3e9e"
   dependencies:

@@ -1,5 +1,5 @@
 const project = require('../config/project.config')
-const server = require('../server/express')
+const server = require('../server/hapi')
 const debug = require('debug')('app:bin:dev-server')
 
 server.START()
