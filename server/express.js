@@ -1,3 +1,5 @@
+// Renamed from main.js
+
 const express = require('express')
 const debug = require('debug')('app:server')
 const path = require('path')
@@ -5,6 +7,8 @@ const webpack = require('webpack')
 const webpackConfig = require('../config/webpack.config')
 const project = require('../config/project.config')
 const compress = require('compression')
+
+debug('Using Express')
 
 const app = express()
 
@@ -67,3 +71,6 @@ if (project.env === 'development') {
 }
 
 module.exports = app
+module.exports.START = () => {
+  app.listen(project.server_port)
+}
